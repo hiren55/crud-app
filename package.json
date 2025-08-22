@@ -1,0 +1,20 @@
+{
+  "name": "crud-app",
+  "version": "1.0.0",
+  "description": "Full-stack CRUD application with React frontend and Node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["crud", "react", "nodejs", "fullstack"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

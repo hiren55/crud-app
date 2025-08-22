@@ -1,0 +1,22 @@
+{
+  "watch": [
+    "server.js",
+    "routes/",
+    "models/",
+    "utils/",
+    "data/"
+  ],
+  "ext": "js,json",
+  "ignore": [
+    "node_modules/",
+    "*.test.js",
+    "*.spec.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "exec": "node server.js",
+  "restartable": "rs",
+  "verbose": true,
+  "colours": true
+}
