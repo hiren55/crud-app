@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: crud-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: CORS_ORIGIN
+        value: https://crud-app-ten-pi.vercel.app

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // API Configuration
 const API_CONFIG = {
-    baseURL: 'http://localhost:5000/api',
+    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
     timeout: 10000, // 10 seconds
     headers: {
         'Content-Type': 'application/json',
